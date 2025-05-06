@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asdf</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>/* No CSS code generated */</style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch-to-Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="container mx-auto p-4 flex items-start">
+        <!-- Rectangle -->
+        <div class="bg-white border border-gray-300 rounded shadow-md p-4 mr-4 w-48 h-32 flex items-center justify-center">
+            <span class="text-lg font-semibold">lol</span>
+        </div>
+
+        <!-- Circles -->
+        <div class="flex flex-col space-y-2">
+            <div class="w-8 h-8 rounded-full border border-gray-300"></div>
+            <div class="w-8 h-8 rounded-full border border-gray-300"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script>// script.js
+console.log("Script loaded!");
+
+// Example: Adding hover effect to circles (demonstrates basic interactivity)
+const circles = document.querySelectorAll('.rounded-full');
+
+circles.forEach(circle => {
+    circle.addEventListener('mouseover', () => {
+        circle.classList.add('bg-blue-100'); // Add a background on hover
+    });
+
+    circle.addEventListener('mouseout', () => {
+        circle.classList.remove('bg-blue-100'); // Remove the background on mouse out
+    });
+});</script>
+</body>
+</html>
